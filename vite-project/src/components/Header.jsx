@@ -1,7 +1,20 @@
 /* eslint-disable react/prop-types */
 
+import { useState } from "react";
 
 export default function Header(props) {
+
+  let [size , setSize] = useState(14)
+  const Btn =  () =>{
+    let newSize = size + 2
+    setSize(newSize)
+    
+    }
+  const btnStyle = {
+      fontSize : size,
+      color: 'red',
+      padding : 10,
+  }
   const {txt}  = props;
     const head = <h2>Welcome to {txt} </h2>
     const divStyle = {
@@ -14,6 +27,8 @@ export default function Header(props) {
         alignItems: 'center',
 
     }
+    
+
     const showAlert = (oper)=>{
       let n1 = parseInt(document.getElementById('n1').value)
       let n2 = parseInt(document.getElementById('n2').value)
@@ -34,7 +49,7 @@ export default function Header(props) {
           <button onClick={()=>showAlert('+')}>+</button> <button onClick={()=>showAlert('-')}>-</button> <button onClick={()=>showAlert('*')}>*</button> <button onClick={()=>showAlert('/')}>/</button>
         </div>
         <div>{head}</div>
-        <div><button onClick={showAlert}>ทดสอบ</button></div>
+        <div><button onClick={Btn} style={btnStyle}>ทดสอบ</button></div>
         <p id="cal"></p>
     </div>
     </>
