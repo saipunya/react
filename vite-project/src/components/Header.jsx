@@ -1,7 +1,8 @@
-import React from 'react'
 
-export default function Header() {
-    const head = <h2>Welcome to React</h2>
+
+export default function Header(props) {
+  const {txt}  = props;
+    const head = <h2>Welcome to {txt} </h2>
     const divStyle = {
         height: '200px',
         backgroundColor: '#5c5c59',
