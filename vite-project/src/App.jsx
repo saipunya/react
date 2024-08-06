@@ -1,6 +1,7 @@
 
 import Header from './components/Header'
 import Main from './components/Main'
+import Banner from './components/Banner'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header txt="sumet"/>
       <Main/>
+      <Banner/>
     </>
   )
 }
