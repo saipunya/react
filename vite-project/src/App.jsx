@@ -2,6 +2,7 @@
 import Header from './components/Header'
 import Main from './components/Main'
 import Banner from './components/Banner'
+import Calculate from './components/Calculate'
 
 function App() {
 
@@ -10,6 +11,9 @@ function App() {
       <Header txt="sumet"/>
       <Main/>
       <Banner/>
+      <br/>
+      <hr />
+      <Calculate/>
     </>
   )
 }

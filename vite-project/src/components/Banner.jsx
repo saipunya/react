@@ -39,6 +39,7 @@ function Banner() {
 
     }
     
+    
   return (
     <div style={{display:'flex',justifyContent:'center',marginTop:'25px'}}>
        <div style={divStyle}>
